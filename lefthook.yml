@@ -1,4 +1,5 @@
 pre-commit:
   commands:
     lint:
-      run: npm run eslint --ext=ts,tsx,js,jsx {staged_files}
+      glob: "*.{js,ts}"
+      run: npm run lint:fix {staged_files}
