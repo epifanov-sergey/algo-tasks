@@ -1,0 +1,4 @@
+pre-commit:
+  commands:
+    lint:
+      run: npm run eslint --ext=ts,tsx,js,jsx {staged_files}

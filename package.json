@@ -1,0 +1,16 @@
+{
+  "name": "codewars-resolved-tasks",
+  "version": "1.0.0",
+  "dependencies": {
+    "eslint": "7.29.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "prettier": "2.3.2",
+    "typescript": "4.3.4",
+    "@arkweid/lefthook": "0.7.6",
+    "jest": "27.0.5"
+  },
+  "scripts": {
+    "lint:fix": "eslint --ext=ts,tsx,js,jsx --fix js ts",
+    "test": "jest"
+  }
+}

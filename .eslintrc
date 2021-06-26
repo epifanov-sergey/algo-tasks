@@ -1,0 +1,13 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "rules": {
+    "no-return-await": "error",
+    "require-await": "error",
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "argsIgnorePattern": "^_" }],
+    "arrow-parens": "error",
+    "prettier/prettier": "error",
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+    "no-shadow": "error",
+    "default-case": "error"
+  }
+}
