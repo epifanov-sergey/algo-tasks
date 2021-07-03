@@ -20,4 +20,4 @@ NOTES:
 - +9 dog years for second year
 - +5 dog years for each year after that
 
-https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript
+https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b
