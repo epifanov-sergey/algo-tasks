@@ -7,4 +7,4 @@ divisors(25); // should return [5]
 divisors(13); // should return "13 is prime"
 ```
 
-https://www.codewars.com/kata/544aed4c4a30184e960010f4/
+https://www.codewars.com/kata/544aed4c4a30184e960010f4
