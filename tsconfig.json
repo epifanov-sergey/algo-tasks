@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "jsx": "preserve",
+        "noEmit": true,
+        "declaration": true,
+        "rootDirs": ["ts"],
+        "pretty": true,
+        "newLine": "lf",
+        "stripInternal": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+    },
+    "exclude": ["node_modules", "**/*.test.ts"]
+}
