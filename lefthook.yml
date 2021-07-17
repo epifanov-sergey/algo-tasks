@@ -3,3 +3,5 @@ pre-commit:
     lint:
       glob: "*.{js,ts}"
       run: npm run lint:fix {staged_files}
+    hook:
+      run: npm run pre-commit && git add {staged_files}

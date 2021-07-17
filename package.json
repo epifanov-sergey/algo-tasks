@@ -18,6 +18,7 @@
   },
   "scripts": {
     "lint:fix": "eslint --fix",
-    "test": "jest"
+    "test": "jest",
+    "pre-commit": "node pre-commit.js"
   }
 }
