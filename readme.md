@@ -3,10 +3,17 @@
 Repository with solutions for codewars katas
 
 My current codewars stats:
+
 ![codewars stats](https://www.codewars.com/users/epifanov-sergey/badges/large)
 
 Solutions are grouped by languages and difficulty.
 
 Current stats of solution in repository:
-- languages: ```[js, ts]```
-- difficulties: ```[6kyu: 5, 7kyu: 9, 8kyu: 2]```
+- languages:
+```
+[js, ts]
+```
+- difficulties:
+```
+[6kyu: 5, 7kyu: 9, 8kyu: 2]
+```
