@@ -15,5 +15,5 @@ Current stats of solution in repository:
 ```
 - difficulties:
 ```
-[3kyu: 1, 4kyu: 1, 6kyu: 6, 7kyu: 20, 8kyu: 3]
+[3kyu: 1, 4kyu: 2, 6kyu: 6, 7kyu: 20, 8kyu: 3]
 ```
