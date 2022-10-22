@@ -5,7 +5,7 @@ const getAllFilesInDir = async (path) => await fs.promises.readdir(path, { withF
 
 const getStats = async () => {
   const basePath = __dirname;
-  const excludedDirs = ['node_modules', '.git', '.idea'];
+  const excludedDirs = ['node_modules', '.git', '.idea', 'leetcode'];
   const allFiles = await getAllFilesInDir(basePath);
   const dirsWithSolutions = allFiles.filter(
     (item) => item.isDirectory() && !excludedDirs.includes(item.name)
