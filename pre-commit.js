@@ -44,7 +44,7 @@ const formatStats = ({ languages, difficulties }) => {
 
 const generatCodewarseReadme = async ({ languages, difficulties }) => {
   const basePath = path.resolve(__dirname, 'codewars', 'readme.base');
-  const readmePath = path.resolve(__dirname,'codewars', 'readme.md');
+  const readmePath = path.resolve(__dirname, 'codewars', 'readme.md');
   const content = await fs.promises.readFile(basePath);
 
   await fs.promises.writeFile(
