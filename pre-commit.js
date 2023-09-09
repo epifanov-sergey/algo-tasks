@@ -3,10 +3,10 @@ const path = require('path');
 
 const getAllFilesInDir = async (path) => await fs.promises.readdir(path, { withFileTypes: true });
 
-const getStats = async () => {
+const getCodewarsStats = async () => {
   const basePath = __dirname;
-  const excludedDirs = ['node_modules', '.git', '.idea', 'leetcode'];
-  const allFiles = await getAllFilesInDir(basePath);
+  const excludedDirs = [];
+  const allFiles = await getAllFilesInDir(path.resolve(basePath, 'codewars'));
   const dirsWithSolutions = allFiles.filter(
     (item) => item.isDirectory() && !excludedDirs.includes(item.name)
   );
@@ -42,9 +42,9 @@ const formatStats = ({ languages, difficulties }) => {
   return { languages: languages.join(', '), difficulties: arDifficulties.join(', ') };
 };
 
-const generateReadme = async ({ languages, difficulties }) => {
-  const basePath = path.resolve(__dirname, 'readme.base');
-  const readmePath = path.resolve(__dirname, 'readme.md');
+const generatCodewarseReadme = async ({ languages, difficulties }) => {
+  const basePath = path.resolve(__dirname, 'codewars', 'readme.base');
+  const readmePath = path.resolve(__dirname,'codewars', 'readme.md');
   const content = await fs.promises.readFile(basePath);
 
   await fs.promises.writeFile(
@@ -54,9 +54,9 @@ const generateReadme = async ({ languages, difficulties }) => {
 };
 
 const main = async () => {
-  const stats = await getStats();
+  const stats = await getCodewarsStats();
 
-  await generateReadme(formatStats(stats));
+  await generatCodewarseReadme(formatStats(stats));
 };
 
 main().finally(() => process.exit());
